@@ -29,3 +29,20 @@ class Ciezarowka(Auto):  # Klasa dziedzicząca po Auto
 
     def zaladuj(self):
         print(f"Ładuję {self.ladownosc} kg towaru.")
+
+def main():
+            # Tworzymy obiekty klasy SamochodOsobowy i Ciezarowka
+        samochod = SamochodOsobowy("Toyota", 2020, 5)
+        ciezarowka = Ciezarowka("Volvo", 2018, 10000)
+
+            # Prezentacja samochodu osobowego
+        print("Samochód osobowy")
+        samochod.przedstaw_sie()
+        samochod.uruchom_silnik()
+        samochod.otworz_drzwi()
+
+            # Prezentacja ciężarówki
+        print("\nCiężarówka")
+        ciezarowka.przedstaw_sie()
+        ciezarowka.uruchom_silnik()
+        ciezarowka.zaladuj()
