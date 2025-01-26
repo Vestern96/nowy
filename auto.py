@@ -46,3 +46,5 @@ def main():
         ciezarowka.przedstaw_sie()
         ciezarowka.uruchom_silnik()
         ciezarowka.zaladuj()
+if __name__ == "__main__":
+    main()  #if __name__ == "__main__": kod jest uruchamiany bezposreddnio a nie gdy jest importowany
