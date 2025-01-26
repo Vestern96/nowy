@@ -19,3 +19,13 @@ class SamochodOsobowy(Auto):  # Klasa dziedzicząca po Auto
 
         def otworz_drzwi(self):
             print(f"Otwieram {self.liczba_drzwi} drzwi!")
+class Ciezarowka(Auto):  # Klasa dziedzicząca po Auto
+    def __init__(self, marka, rok_produkcji, ladownosc):
+        super().__init__(marka, rok_produkcji)  # Wywołanie konstruktora klasy bazowej
+        self.ladownosc = ladownosc  # Atrybut specyficzny dla ciężarówki
+
+    def uruchom_silnik(self):
+        print("Ciężarówka uruchomiona!")
+
+    def zaladuj(self):
+        print(f"Ładuję {self.ladownosc} kg towaru.")
