@@ -8,3 +8,14 @@ class Auto:  # Klasa bazowa
 
     def przedstaw_sie(self):
         print(f"Jestem {self.marka} z {self.rok_produkcji} roku")
+
+class SamochodOsobowy(Auto):  # Klasa dziedzicząca po Auto
+        def __init__(self, marka, rok_produkcji, liczba_drzwi):
+                super().__init__(marka, rok_produkcji)  # Wywołanie konstruktora klasy bazowej
+                self.liczba_drzwi = liczba_drzwi  # Dodatkowy atrybut specyficzny dla samochodu osobowego
+
+        def uruchom_silnik(self):
+                print("Samochód osobowy rusza!")
+
+        def otworz_drzwi(self):
+            print(f"Otwieram {self.liczba_drzwi} drzwi!")
